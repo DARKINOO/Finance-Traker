@@ -114,5 +114,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - youremail@example.com
-Project Link: [https://github.com/yourusername/finance_project](https://github.com/yourusername/finance_project)
+Yash Jain - yjain0107@gmail.com
