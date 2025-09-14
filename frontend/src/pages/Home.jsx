@@ -40,9 +40,12 @@ const Home = () => {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="backdrop-blur-sm p-8 rounded-lg">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                Take Control of Your Finances
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+                HisabKitab AI
               </h1>
+              <p className="text-xl md:text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+                 Take Control of Your Finances
+              </p>
               <p className="text-xl md:text-2xl mb-8 text-gray-300">
                 Track expenses, analyze spending patterns, and make smarter financial decisions with AI-powered insights.
               </p>
@@ -118,6 +121,26 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+       <footer className="py-8 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-pink-500/5 to-cyan-500/5 backdrop-blur-xl"></div>
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 font-medium">
+              Created with 💖 by Yash Jain
+            </p>
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-400">Powered by</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 font-bold">
+                HisabKitab AI
+              </span>
+            </div>
+            <p className="text-sm text-gray-500">
+              © 2025 HisabKitab AI. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
