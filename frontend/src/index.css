@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-paper;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-sm hover:bg-primary-dark transition-colors;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-rajdhani;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-paper bg-opacity-90 backdrop-blur-md border border-primary border-opacity-10 rounded-lg shadow-neon;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-primary text-white font-medium py-2 px-4 rounded-lg shadow-neon hover:shadow-neon-hover transition-shadow duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-secondary text-white font-medium py-2 px-4 rounded-lg shadow-neon-secondary hover:shadow-neon-secondary-hover transition-shadow duration-300;
+  }
+
+  .input {
+    @apply bg-paper border border-primary border-opacity-20 rounded-lg px-4 py-2 focus:outline-none focus:border-primary focus:border-opacity-50 transition-colors;
+  }
+}
