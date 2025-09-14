@@ -1,6 +1,6 @@
-# AI-Powered Finance Tracker
+# HisabKitab AI
 
-A modern financial management application with AI-driven insights and predictions.
+A modern AI-powered expense tracking and financial management application that combines traditional bookkeeping with artificial intelligence.
 
 ## Features
 
@@ -10,6 +10,7 @@ A modern financial management application with AI-driven insights and prediction
 - **Responsive Design**: Seamless experience across all devices
 - **Real-time Tracking**: Monitor your expenses as they happen
 - **Category Management**: Organize expenses with intelligent categorization
+- **AI-Powered Categorization**: Automatic transaction categorization using machine learning
 
 ## Tech Stack
 
@@ -22,16 +23,17 @@ A modern financial management application with AI-driven insights and prediction
 
 ### Backend
 - FastAPI
-- PostgreSQL
+- MongoDB
+- PyMongo for database operations
 - JWT Authentication
-- Machine Learning for predictions
+- Scikit-learn for ML predictions
 
 ## Getting Started
 
 ### Prerequisites
 - Node.js (v16 or higher)
 - Python 3.8+
-- PostgreSQL
+- MongoDB 6.0+
 
 ### Installation
 
@@ -39,7 +41,7 @@ A modern financial management application with AI-driven insights and prediction
 
 ```bash
 git clone <your-repo-url>
-cd finance_project
+cd hisabkitab-ai
 ```
 
 2. **Set up the frontend**
@@ -59,7 +61,8 @@ uvicorn main:app --reload
 ```
 
 4. **Set up the database**
-- Create a PostgreSQL database
+- Install and start MongoDB
+- Create a new MongoDB database
 - Update the database configuration in `backend/.env`
 
 ## Environment Variables
@@ -73,7 +76,7 @@ REACT_APP_API_URL=http://localhost:8000
 ### Backend
 Create a `.env` file in the backend directory:
 ```
-DATABASE_URL=postgresql://user:password@localhost/dbname
+MONGODB_URI=mongodb://localhost:27017/hisabkitab
 SECRET_KEY=your_secret_key
 ```
 
