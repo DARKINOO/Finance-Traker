@@ -43,6 +43,10 @@ def prepare_data(transactions):
         'amount': ['sum', 'mean', 'std', 'count']
     }).reset_index()
     monthly_stats.columns = ['month', 'total', 'mean', 'std', 'count']
+
+     # 🔧 Fill NaN or inf values safely
+    monthly_stats = monthly_stats.fillna(0)
+    monthly_stats = monthly_stats.replace([np.inf, -np.inf], 0)
     
     return monthly_stats, le
 
