@@ -127,7 +127,7 @@ const Home = () => {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 font-medium">
-              Created with 💖 by Bhuvnesh sharma
+              Created with 💖 by Yash Jain
             </p>
             <div className="flex items-center space-x-2">
               <span className="text-gray-400">Powered by</span>
